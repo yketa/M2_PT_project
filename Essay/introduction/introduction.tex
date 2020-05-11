@@ -1,0 +1,32 @@
+\documentclass[class=report, float=false, crop=false]{standalone}
+% \usepackage[subpreambles=true]{standalone}
+
+\input{preamble}
+
+\graphicspath{{figures/images/}}
+
+% \begin{cbunit}
+
+\begin{document}
+
+\section*{Introduction}
+\label{introduction}
+\addcontentsline{toc}{section}{Introduction}
+
+Granular materials are composed of athermal -- \textit{i.e.}, thermal agitation does not affect the kinetic energy of the system --, macroscopic objects -- \textit{i.e.}, they can be observed with the naked eye. \cite{duran2012sands} They are qualified as soft-matter, since they can show either liquid-like or solid-like properties under different experimental conditions.\\
+
+Despite their ubiquity in nature and the fact that they are the second-most manipulated material in industry \cite{patrick2005slow}, little was known about granular materials until a few decades ago. According to Pierre-Gilles de Gennes, "granular matter in 1998 [was] at the level of solid state physics in 1930." \cite{de1999granular} Yet, these materials are of great theoretical interest in the domain of statistical mechanics. Indeed, according to the own words of Leo P. Kadanoff himself, "one might even say that the study of granular materials gives one a chance to reinvent statistical mechanics in a new context." \cite{kadanoff1999built}\\
+
+Hopefully, a lot of theoretical, numerical and experimental work has been done on the topic of granular materials since these two citations. One of the current most thrilling area of research is the jamming transition occurring in these. What has been observed is that granular materials develop a yield stress in a disordered state \cite{PRE68.011306} -- or a stress relaxation time which exceeds a reasonable experimental time -- upon increasing the packing fraction $\phi$ above a critical value $\phi_J$. At low $\phi$, each particle can move independently of its neighbours while at high $\phi$ the particles can not avoid each other, resulting in a bulk modulus since the pressure increases upon compression. This phenomenon is called jamming and corresponds to a transition from a flowing liquid-like state to an amorphous rigid solid state.\\
+
+Much work on the jamming transition has focused on ideal packings of disks in 2D and spheres in 3D, both theoretically \cite{PRL106.135702} and numerically \cite{PRL99.178001,PRE83.031307}. However, early publications by Donev \textit{et al.} \cite{donev2004improving,PRL94.198001} have showed that packings of ellipsoids are of great interest. Indeed, their data showed that the value of the packing fraction in random jammed packings of ellipsoids can not only be greater than its value in spheres' random close packing (RCP), $\phi\sim0.64$, but also close to its value in spheres' ordered face-centered cubic (fcc) or hexagonal close-packed (hcp) packings, $\phi\sim0.74$, which is the highest value possible for packings of spheres. In crystal packings of ellipsoids, the value of $\phi\sim0.77$ was even obtained. \cite{donev2004unusually} Determining and characterising the densest possible packings is of great physical interest. For hard particles, the densest packed phase is the most thermodynamically stable at high density. Therefore, if hard particles -- such as the aforementioned ellipsoids -- were to pack more densely in a random configuration rather than in a crystal array, these would not crystallise. \cite{chaikin2006some}\\
+
+Contrarily to spheres, ellipsoids are anisotropic particles. Therefore, when studying packings of ellipsoids, one might be interested in their orientations. Thirty years ago, Frenkel and Mulder investigated the existence of an orientational order in packings of hard spheroids \cite{frenkel1985hard} -- \textit{i.e.}, ellipsoids of revolutions -- inspired by the early, much celebrated, theoretical work by Onsager on packings of rigid hard rods. \cite{onsager1949effects} Our first goal in this essay will be to study if and how an orientational order appears in static packings of spheroids at equilibrium.\\
+
+Numerical shearing simulations of non-rotating frictionless soft-core disks have been proven particularly efficient to study the jamming transition \cite{PRL99.178001,PRE83.031307} and have recently been adapted by our research team at Umeå University to the study of rotating soft-core spheroids. Based on the data gathered from these simulations, our second goal in this essay will be to study what happens to the orientational order close to the jamming transition.
+
+% \input{references/biblio}
+
+\end{document}
+
+% \end{cbunit}
